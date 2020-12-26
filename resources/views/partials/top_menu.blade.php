@@ -32,7 +32,17 @@
 
 			<span class="navbar-text ml-md-3 mr-md-auto"></span>
 
+        <div class="col-md-2">
+            <select class="form-control Langchange">
+                <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>french</option>
+            </select>
+        </div>
+
         <ul class="navbar-nav">
+
+
+
 
             <li class="nav-item dropdown dropdown-user">
                 <a href="#" class="navbar-nav-link dropdown-toggle" data-toggle="dropdown">

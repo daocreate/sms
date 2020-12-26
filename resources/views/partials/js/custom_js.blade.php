@@ -281,6 +281,9 @@
         form[0].reset();
     }
 
-
+    var url = "{{ route('LangChange') }}";
+    $(".Langchange").change(function(){
+        window.location.href = url + "?lang="+ $(this).val();
+    });
 
 </script>
