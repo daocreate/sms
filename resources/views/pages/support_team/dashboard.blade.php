@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('page_title', 'My Dashboard')
+@section('page_title', 'Dashboard')
 @section('content')
 
     @if(Qs::userIsTeamSA())

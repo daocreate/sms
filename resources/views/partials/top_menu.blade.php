@@ -35,7 +35,7 @@
         <div class="col-md-2">
             <select class="form-control Langchange">
                 <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
-                <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>french</option>
+                <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>Français</option>
             </select>
         </div>
 
@@ -51,7 +51,7 @@
                 </a>
 
                 <div class="dropdown-menu dropdown-menu-right">
-                    <a href="{{ Qs::userIsStudent() ? route('students.show', Qs::hash(Qs::findStudentRecord(Auth::user()->id)->id)) : route('users.show', Qs::hash(Auth::user()->id)) }}" class="dropdown-item"><i class="icon-user-plus"></i> My profile</a>
+                    <a href="{{ Qs::userIsStudent() ? route('students.show', Qs::hash(Qs::findStudentRecord(Auth::user()->id)->id)) : route('users.show', Qs::hash(Auth::user()->id)) }}" class="dropdown-item"><i class="icon-user-plus"></i> {{__('msg.menu.my_profil')}} </a>
                     <div class="dropdown-divider"></div>
                     <a href="{{ route('my_account') }}" class="dropdown-item"><i class="icon-cog5"></i> Account settings</a>
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();

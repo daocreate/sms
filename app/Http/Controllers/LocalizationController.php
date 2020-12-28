@@ -20,6 +20,6 @@ class LocalizationController extends Controller
     {
         App::setLocale($request->lang);
         session()->put('locale', $request->lang);
-        return redirect()->route('dashboard');
+        return redirect()->back();
     }
 }

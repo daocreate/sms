@@ -20,5 +20,8 @@ return
         'pin_create' => 'Épingles générées avec succès',
         'del_teacher' => 'Avant de pouvoir supprimer cet enseignant, vous devez trouver un remplaçant pour la (les) matière (s) qu\'il enseigne. Voir le profil de l\'enseignant pour voir ses sujets ',
         'invalid_time_slot' => 'L\'heure de début et l\'heure de fin ne peuvent pas être identiques',
+        'menu' => [
+            'my_profil' => 'Mon profil',
+        ]
 
     ];
