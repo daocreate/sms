@@ -15,9 +15,11 @@
                     <div class="card mb-0">
                         <div class="card-body">
                             <div class="text-center mb-3">
-                                <i class="icon-people icon-2x text-warning-400 border-warning-400 border-3 rounded-round p-3 mb-3 mt-1"></i>
-                                <h5 class="mb-0">Login to your account</h5>
-                                <span class="d-block text-muted">Your credentials</span>
+                                <h3>{{ Qs::getSystemTitle() }} </h3>
+
+                                <img style="width: 100px" height="100px" src="{{ Qs::getSystemLogo() }}" alt="logo">
+                                <h5 class="mb-0">{{__('msg.login_to_your_account')}}</h5>
+                                <span class="d-block text-muted">{{__('msg.your_credentials')}}</span>
                             </div>
 
                                 @if ($errors->any())
@@ -41,15 +43,15 @@
                                 <div class="form-check mb-0">
                                     <label class="form-check-label">
                                         <input type="checkbox" name="remember" class="form-input-styled" {{ old('remember') ? 'checked' : '' }} data-fouc>
-                                        Remember
+                                        {{__('msg.remember')}}
                                     </label>
                                 </div>
 
-                                <a href="{{ route('password.request') }}" class="ml-auto">Forgot password?</a>
+                                <a href="{{ route('password.request') }}" class="ml-auto">{{__('msg.forgot_password')}}</a>
                             </div>
 
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-block">Sign in <i class="icon-circle-right2 ml-2"></i></button>
+                                <button type="submit" class="btn btn-primary btn-block">{{__('msg.signing')}} <i class="icon-circle-right2 ml-2"></i></button>
                             </div>
 
                            {{-- <div class="form-group">

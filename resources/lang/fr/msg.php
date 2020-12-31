@@ -58,6 +58,11 @@ return
             'view_pins' => 'Afficher les Pin',
             'my_children' => 'Mes enfants'
 
-        ]
+        ],
+        'login_to_your_account' => 'Connectez-vous à votre compte',
+        'remember' => 'Souviens-toi',
+        'forgot_password' => 'Mot de passe Oublié?',
+        'signing' => 'Connexion',
+        'your_credentials'      => 'Vos Identifiants'
 
     ];

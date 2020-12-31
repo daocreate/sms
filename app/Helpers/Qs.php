@@ -48,7 +48,7 @@ class Qs
     {
         return '
  <div class="alert alert-success alert-bordered">
-                    <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close</span></button> '.
+                    <button type="button" class="close" data-dismiss="alert"><span>&times;</span><span class="sr-only">Close </span></button> '.
         $msg.'  </div>
                 ';
     }
@@ -276,6 +276,12 @@ class Qs
     public static function getSystemName()
     {
         return self::getSetting('system_name');
+    }
+    public static function getSystemTitle(){
+        return self::getSetting('system_title');
+    }
+    public static function getSystemLogo(){
+        return self::getSetting('logo');
     }
 
     public static function findMyChildren($parent_id)

@@ -14,6 +14,12 @@
 
     <div class="collapse navbar-collapse" id="navbar-mobile">
         <ul class="navbar-nav ml-auto">
+            <li>
+                <select class="form-control Langchange">
+                    <option value="en" {{ session()->get('locale') == 'en' ? 'selected' : '' }}>English</option>
+                    <option value="fr" {{ session()->get('locale') == 'fr' ? 'selected' : '' }}>Français</option>
+                </select>
+            </li>
             <li class="nav-item dropdown">
                 <a href="{{ route('home') }}" class="navbar-nav-link">
                     <i class="icon-home"></i>

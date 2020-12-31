@@ -8,7 +8,7 @@
 
     <div class="navbar-collapse collapse" id="navbar-footer">
 					<span class="navbar-text">
-						&copy; {{ date('Y') }}. <a href="#">{{ Qs::getSystemName() }}</a> by <a href="#" >CJ Inspired</a>
+						&copy; {{ date('Y') }}. <a href="#">{{ Qs::getSystemName() }}</a> by <a href="https://www.facebook.com/daocreate" target="_blank">DAO create</a>
 					</span>
 
         <ul class="navbar-nav ml-lg-auto">
@@ -18,3 +18,9 @@
         </ul>
     </div>
 </div>
+<script type="application/javascript">
+    var url = "{{ route('LangChange') }}";
+    $(".Langchange").change(function(){
+        window.location.href = url + "?lang="+ $(this).val();
+    });
+</script>

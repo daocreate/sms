@@ -59,5 +59,10 @@ return
         'view_pins'          =>'View Pins',
         'my_children'       =>'My Children'
     ],
+    'login_to_your_account' => 'Login to your account',
+    'remember'              => 'Remember',
+    'forgot_password'       => 'Forgot password?',
+    'signing'               => 'Sign in',
+    'your_credentials'      => 'Your credentials'
 
 ];
